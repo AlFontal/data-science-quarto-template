@@ -1,6 +1,8 @@
 # Minimum Copier version required
 _min_copier_version: "9.0"
 
+_subdirectory: "{{ '{{ project_name }}' }}"
+
 # Project variables
 project_name:
   type: str
@@ -46,11 +48,10 @@ files:
     - _quarto.yml
     - example.ipynb
     - custom.css
-  - pyproject.toml
-
-# Conditional inclusion of files
-_tasks:
-  - src_path: "pyproject.toml"
-    when: "{{ default_language in ['Python', 'Both'] }}"
-  - src_path: "renv.lock"
-    when: "{{ default_language in ['R', 'Both'] }}"
+{% set file_list = [
+  'pyproject.toml' if default_language in ['Python', 'Both'] else None,
+  'renv.lock' if default_language in ['R', 'Both'] else None
+] %}
+  {% for file in file_list | select('!=', None) %}
+    - "{{ file }}"
+  {% endfor %}
