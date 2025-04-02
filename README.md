@@ -77,10 +77,10 @@ The other files in the top level directory serve as configuration files for the 
 ├── output/                         # Output files folder
 ├── code/                           # Source code files
 ├── assets/                         # Static assets
-└── reports/                        # Jupyter notebooks
-    ├── quarto.yml                  # Quarto project config
+└── reports/                        # GH Pages reports and notebooks
+    ├── _quarto.yml                 # Quarto project config
     ├── example.ipynb               # Example notebook
-    └── custom.css                  # Git ignore file
+    └── custom.css                  # CSS for styling
 ├── pyproject.toml                  # Python dependencies (uv)
 ├── renv.lock                       # R dependencies
 ├── README.md                       # Main repository README

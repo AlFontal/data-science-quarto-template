@@ -1,5 +1,5 @@
-# FILE: /data-science-quarto-template/data-science-quarto-template/README.md
-# Data Science Repository Template
+# {{ project_name }}
+
 ![license](https://img.shields.io/badge/license-MIT-green)
 ![python](https://img.shields.io/badge/python->3.10-orange?logo=Python&logoColor=white)
 ![R](https://img.shields.io/badge/R->4.4.2-blue?logo=R)
@@ -7,31 +7,7 @@
 
 ## 📊 Overview
 
-This repository serves as a data science project template that enables seamless reproducibility using **Quarto**. It supports both **Python** (via `uv`) and **R** (via `renv`), ensuring a streamlined workflow for working with Jupyter notebooks and publishing results to **GitHub Pages**.
-
-I made it to serve my own needs, but I hope it can be useful to others as well. Feel free to use it as a starting point for your own projects, and let me know if you have any suggestions or improvements!
-
-## 🚀 Features
-
-- 📂 **Structured project layout** for easy navigation.
-- 📜 **Quarto-powered** rendering of Jupyter notebooks.
-- 🏗 **GitHub Actions workflow** to automate Quarto rendering and deployment of results to GitHub Pages.
-- 🐍 **Python dependency management** with [uv](https://github.com/astral-sh/uv).
-- 📦 **R dependency management** with [renv](https://rstudio.github.io/renv/).
-- 📑 Example Jupyter notebook to get started.
-
-I include some opinionated choices and customizations of my own liking, such as the `custom.css` file for styling the rendered notebooks, and the default usage of `hypothes.is` for comments and annotations. These are all optional and can be removed or modified as needed.
-
-## 🛠 Generating a New Project
-
-This project template is managed using **Copier**, which allows you to quickly generate a new repository with the predefined structure. To create a new project, run:
-
-```bash
-copier copy https://github.com/AlFontal/data-science-quarto-template.git my-new-project
-cd my-new-project
-```
-
-This will prompt you for necessary project details and generate a customized project setup.
+This repository was made using a data science project template that enables seamless reproducibility using **Quarto**. It supports both **Python** (via `uv`) and **R** (via `renv`), ensuring a streamlined workflow for working with Jupyter notebooks and publishing results to **GitHub Pages**. The template can be found in [GitHub](https://github.com/AlFontal/data-science-quarto-template).
 
 ## 🔧 Setup & Usage
 
@@ -77,10 +53,10 @@ The other files in the top level directory serve as configuration files for the 
 ├── output/                         # Output files folder
 ├── code/                           # Source code files
 ├── assets/                         # Static assets
-└── reports/                        # Jupyter notebooks
-    ├── quarto.yml                  # Quarto project config
+└── reports/                        # GH Pages reports and notebooks
+    ├── _quarto.yml                 # Quarto project config
     ├── example.ipynb               # Example notebook
-    └── custom.css                  # Git ignore file
+    └── custom.css                  # CSS for styling
 ├── pyproject.toml                  # Python dependencies (uv)
 ├── renv.lock                       # R dependencies
 ├── README.md                       # Main repository README
