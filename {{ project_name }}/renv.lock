@@ -1,0 +1,35 @@
+{
+  "R": {
+    "version": "4.4.2",
+    "packages": {
+      "dplyr": {
+        "version": "1.0.7",
+        "source": "CRAN"
+      },
+      "ggplot2": {
+        "version": "3.3.5",
+        "source": "CRAN"
+      },
+      "tidyr": {
+        "version": "1.1.4",
+        "source": "CRAN"
+      },
+      "readr": {
+        "version": "2.1.1",
+        "source": "CRAN"
+      },
+      "purrr": {
+        "version": "0.3.4",
+        "source": "CRAN"
+      },
+      "knitr": {
+        "version": "1.36",
+        "source": "CRAN"
+      },
+      "rmarkdown": {
+        "version": "2.11",
+        "source": "CRAN"
+      }
+    }
+  }
+}

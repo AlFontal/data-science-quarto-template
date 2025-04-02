@@ -1,0 +1,19 @@
+[tool]
+name = "{{ project_name }}"
+description = "A data science project template using Quarto."
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+
+[build-system]
+requires = ["uv"]
+build-backend = "uv"
+
+[project]
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "plotnine",
+    "scikit-learn",
+    "jupyter",
+]

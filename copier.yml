@@ -1,0 +1,56 @@
+# Minimum Copier version required
+_min_copier_version: "9.0"
+
+# Project variables
+project_name:
+  type: str
+  help: "Project name"
+
+project_slug:
+  type: str
+  default: "{{ project_name.lower().replace(' ', '-') }}"
+  help: "Project slug"
+
+description:
+  type: str
+  default: "Data science project template using Quarto"
+  help: "Short description of the project"
+
+author:
+  type: str
+  default: "Alejandro Fontal"
+  help: "Your name"
+
+default_language:
+  type: str
+  default: "Python"
+  choices:
+    - Python
+    - R
+    - Both
+  help: "Which language(s) will you use?"
+
+use_hypothesis:
+  type: bool
+  default: true
+  help: "Include hypothes.is annotations?"
+
+# Template structure
+files:
+  - .github/workflows/render.yml
+  - data/
+  - output/
+  - code/
+  - assets/
+  - reports/
+    - _quarto.yml
+    - example.ipynb
+    - custom.css
+  - pyproject.toml
+
+# Conditional inclusion of files
+_tasks:
+  - src_path: "pyproject.toml"
+    when: "{{ default_language in ['Python', 'Both'] }}"
+  - src_path: "renv.lock"
+    when: "{{ default_language in ['R', 'Both'] }}"
