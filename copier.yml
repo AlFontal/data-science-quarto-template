@@ -48,10 +48,5 @@ files:
     - _quarto.yml
     - example.ipynb
     - custom.css
-{% set file_list = [
-  'pyproject.toml' if default_language in ['Python', 'Both'] else None,
-  'renv.lock' if default_language in ['R', 'Both'] else None
-] %}
-  {% for file in file_list | select('!=', None) %}
-    - "{{ file }}"
-  {% endfor %}
+  - "{{ 'pyproject.toml' if default_language in ['Python', 'Both'] else None }}"
+  - "{{ 'renv.lock' if default_language in ['R', 'Both'] else None }}"
