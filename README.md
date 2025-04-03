@@ -4,13 +4,13 @@
 ![R](https://img.shields.io/badge/R->4.4.2-blue?logo=R)
 ![Quarto](https://img.shields.io/badge/quarto->1.6-skyblue?logo=quarto)
 
-## 📊 Overview
+## Overview
 
 This repository serves as a data science project template that enables seamless reproducibility using **Quarto**. It supports both **Python** (via `uv`) and **R** (via `renv`), ensuring a streamlined workflow for working with Jupyter notebooks and publishing results to **GitHub Pages**.
 
 I made it to serve my own needs, but I hope it can be useful to others as well. Feel free to use it as a starting point for your own projects, and let me know if you have any suggestions or improvements!
 
-## 🚀 Features
+## Features
 
 - 📂 **Structured project layout** for easy navigation.
 - 📜 **Quarto-powered** rendering of Jupyter notebooks.
@@ -21,7 +21,7 @@ I made it to serve my own needs, but I hope it can be useful to others as well. 
 
 I include some opinionated choices and customizations of my own liking, such as the `custom.css` file for styling the rendered notebooks, and the default usage of `hypothes.is` for comments and annotations. These are all optional and can be removed or modified as needed.
 
-## 🛠 Generating a New Project
+## Generating a New Project
 
 This project template is managed using **Copier**, which allows you to quickly generate a new repository with the predefined structure. To create a new project, run:
 

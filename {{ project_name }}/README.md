@@ -5,7 +5,7 @@
 ![R](https://img.shields.io/badge/R->4.4.2-blue?logo=R)
 ![Quarto](https://img.shields.io/badge/quarto->1.6-skyblue?logo=quarto)
 
-## 📊 Overview
+## Overview
 
 This repository was made using a data science project template that enables seamless reproducibility using **Quarto**. It supports both **Python** (via `uv`) and **R** (via `renv`), ensuring a streamlined workflow for working with Jupyter notebooks and publishing results to **GitHub Pages**. The template can be found in [GitHub](https://github.com/AlFontal/data-science-quarto-template).
 
