@@ -39,9 +39,9 @@ website:
       - icon: github
         menu: 
         - text: "GitHub Repository"
-          href: https://github.com/AlFontal/{{ project-slug }}
+          href: https://github.com/AlFontal/{{ project_slug }}
         - text: "Raise an issue"
-          href: https://github.com/AlFontal/{{ project-slug }}/issues/new
+          href: https://github.com/AlFontal/{{ project_slug }}/issues/new
       - icon: envelope
         href: mailto:alejandro.fontal.92@gmail.com
         aria-label: Mail

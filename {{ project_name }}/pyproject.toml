@@ -9,6 +9,8 @@ requires = ["uv"]
 build-backend = "uv"
 
 [project]
+name = "{{ project_name }}"
+version = "0.1.0"
 dependencies = [
     "numpy",
     "pandas",

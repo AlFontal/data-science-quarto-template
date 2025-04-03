@@ -2,6 +2,9 @@
 _min_copier_version: "9.0"
 
 _subdirectory: "{{ '{{ project_name }}' }}"
+_templates_suffix: ""
+_templates_suffix_keep: true
+
 
 # Project variables
 project_name:
