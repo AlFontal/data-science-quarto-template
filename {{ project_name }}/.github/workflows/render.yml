@@ -12,7 +12,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-
+        
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+      
       - name: Render Quarto documents
         run: |
           quarto render reports
